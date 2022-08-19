@@ -1,73 +1,41 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
-
+# Book Store
+This is an application built using React, CSS and JSX.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
+- React
+- JSX
+ 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
+### Prerequisites:
 
-### Prerequisites
+Any kind of browser and code editor.
+### Setup:
 
-### Setup
+    1. Clone the [repository](https://github.com/Ney2/book-store.git)
+    2. Then open the folder in your local environment using any code editor
+    3. Open terminal
+    4. Type npm install, this will install all the necessary dependencies
+    5. Type npm start in your terminal, this will open the project in your browser
 
-### Install
+# Author 
 
-### Usage
+- GitHub: [@Ney2](https://github.com/Ney2)
+- Twitter: [@KidistGuta](https://twitter.com/GutaKidist)
+- LinkedIn: [@KidistDinku](https://www.linkedin.com/in/kidist-guta-014025183/)
+# 🤝 Contributing
+Contributions, [issues](https://github.com/Ney2/book-store/issues), and feature requests are welcome!
 
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
+# Show your support
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+# Acknowledgments
+To microverse
+# 📝 License
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+This project is [MIT](https://github.com/Ney2/book-store/blob/dev/LICENSE) licensed.
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
