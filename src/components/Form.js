@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import React, { useState } from 'react';
+import swal from 'sweetalert';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
@@ -8,30 +9,27 @@ const Form = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
+  const newBook = (e) => {
+    e.preventDefault();
+    const book = {
+      id: uuidv4(),
+      title,
+      author,
+      category: `${['Action', 'Fiction', 'Adventure', 'Classics'][Math.floor(Math.random() * ['Action', 'Fiction', 'Adventure', 'Classics'].length)]}`,
+    };
+    if (title.length && author.length) {
+      dispatch(addBook(book));
+      swal('Done!', `${title} successfully added`, 'success');
+      setTitle('');
+      setAuthor('');
+    }
+  };
+
   const changeTitle = (e) => {
     setTitle(e.target.value);
   };
   const changeAuthor = (e) => {
     setAuthor(e.target.value);
-  };
-
-  const newBook = (e) => {
-    e.preventDefault();
-
-    const book = {
-      id: uuidv4(),
-      title,
-      author,
-      progress: 10,
-      chapter: 10,
-      genre: 'adventure',
-    };
-
-    if (title.length && author.length) {
-      dispatch(addBook(book));
-      setTitle('');
-      setAuthor('');
-    }
   };
 
   return (

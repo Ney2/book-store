@@ -1,15 +1,29 @@
 /* eslint-disable max-len */
-import React from 'react';
-import { useSelector } from 'react-redux/es/exports';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux/es/exports';
+import { fetchBooks } from '../redux/books/books';
 import Books from './Books';
 import Form from './Form';
 
 function BookList() {
   const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, []);
   return (
     <div>
       <div className="books-holder">
-        {books.map((book) => <Books key={book.id} id={book.id} title={book.title} author={book.author} progress={book.progress} chapter={book.chapter} genre={book.genre} />)}
+        {books.map((book) => (
+          <Books
+            key={book[0]}
+            id={book[0]}
+            title={book[1][0].title}
+            author={book[1][0].author}
+            chapter={book[1][0].category}
+          />
+        ))}
       </div>
       <Form />
     </div>
