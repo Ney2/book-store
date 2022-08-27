@@ -1,4 +1,5 @@
 import React from 'react';
+import './CSS/Catagory.css';
 import { useSelector, useDispatch } from 'react-redux/es/exports';
 import { checkStatus } from '../redux/catagories/catagories';
 
@@ -9,7 +10,7 @@ const Books = () => {
   return (
     <div>
       <button type="submit" className="catagories" onClick={() => dispatch(checkStatus())}>Check Status</button>
-      <h3>{myCategories}</h3>
+      <h3 className="msg">{myCategories}</h3>
     </div>
   );
 };

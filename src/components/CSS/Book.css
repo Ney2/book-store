@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 15vh;
+  border: 2px solid black;
+  margin: 3%;
+  padding: 2%;
+}
+
+.progress {
+  display: flex;
+  height: 100px;
+  gap: 5%;
+}
+
+.percentage {
+  margin-top: 5%;
+}
+
+.completed {
+  margin-top: 30%;
+  margin-left: -30%;
+}

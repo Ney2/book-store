@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  margin: 3%;
+}
+
+.form-container h3 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.25fr;
+  grid-gap: 2%;
+}
+
+.book-title {
+  height: 220%;
+}
+
+.book-author {
+  height: 220%;
+}
+
+.add-book {
+  height: 220%;
+}
