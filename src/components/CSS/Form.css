@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  background-color: #f5f6fa;
 }
 
 .form-container {
@@ -18,14 +22,29 @@
   grid-gap: 2%;
 }
 
-.book-title {
-  height: 220%;
+.input {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #121212;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.book-author {
-  height: 220%;
+.form-header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #888;
+  font-size: 2rem;
 }
 
 .add-book {
-  height: 220%;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Roboto slab', sans-serif;
 }

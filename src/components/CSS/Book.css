@@ -1,29 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.book-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90vw;
-  height: 15vh;
-  border: 2px solid black;
-  margin: 3%;
-  padding: 2%;
-}
-
 .progress {
-  display: flex;
   height: 100px;
-  gap: 5%;
-}
-
-.percentage {
-  margin-top: 5%;
+  background: none;
 }
 
 .completed {
-  margin-top: 30%;
-  margin-left: -30%;
+  margin-top: 10%;
+  margin-left: -50%;
+}
+
+.btn {
+  border: none;
+}
+
+.category {
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+  font-size: 1rem;
+  opacity: 0.5;
+  font-weight: 700; 
+}
+
+.title {
+  font-family: 'Roboto slab', sans-serif;
+  font-weight: 700;
+  color: #121212;
+}
+
+.author {
+  font-family: 'Roboto slab', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-top: 1.313rem;
+}
+
+.list button {
+  font-family: 'Roboto slab', sans-serif;
+  color: #4386bf;
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  align-items: center;
+}
+
+.percentage,
+.completed {
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+  font-size: 2rem;
+}
+
+.current-chapter,
+.chapter {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  color: #121212;
+}
+
+.current-chapter {
+  opacity: 0.5;
+  font-size: 1rem;
+}
+
+.chapter {
+  font-size: 1rem;
+}
+
+.update {
+  cursor: pointer;
+  border: none;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 300;
+  color: #fff;
 }
