@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.catagories {
+  margin-left: 48%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+.msg {
+  text-align: center;
+}

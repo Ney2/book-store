@@ -1,6 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
 import React, { useState } from 'react';
 import swal from 'sweetalert';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './CSS/Form.css';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
 
@@ -34,11 +36,12 @@ const Form = () => {
 
   return (
     <div className="form-container">
-      <h3>Add New Book</h3>
+      <hr />
+      <h3 className="form-header">ADD NEW BOOK</h3>
       <form className="form" onSubmit={newBook}>
-        <input className="title" placeholder="Book Title" value={title} onChange={changeTitle} required />
-        <input className="author" placeholder="Author Name" value={author} onChange={changeAuthor} required />
-        <button type="submit" className="add-book">Add Book</button>
+        <input className="input book-title" placeholder="Book Title" value={title} onChange={changeTitle} required />
+        <input className="input book-author" placeholder="Author Name" value={author} onChange={changeAuthor} required />
+        <button type="submit" className="btn btn-primary add-book">Add Book</button>
       </form>
     </div>
   );

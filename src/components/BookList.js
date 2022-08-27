@@ -21,7 +21,7 @@ function BookList() {
             id={book[0]}
             title={book[1][0].title}
             author={book[1][0].author}
-            chapter={book[1][0].category}
+            category={book[1][0].category}
           />
         ))}
       </div>
