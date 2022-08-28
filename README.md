@@ -8,6 +8,9 @@ This is an application built using React, CSS and JSX.
 - React
 - JSX
  
+ ## Live Demo
+ [BookStore](https://glowing-sopapillas-9383e4.netlify.app/)
+ 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -16,7 +19,7 @@ To get a local copy up and running follow these simple example steps.
 Any kind of browser and code editor.
 ### Setup:
 
-    1. Clone the [repository](https://github.com/Ney2/book-store.git)
+    1. Clone the repository(https://github.com/Ney2/book-store.git)
     2. Then open the folder in your local environment using any code editor
     3. Open terminal
     4. Type npm install, this will install all the necessary dependencies
